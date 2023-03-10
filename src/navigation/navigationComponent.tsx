@@ -3,7 +3,7 @@ import { historyChanges } from "./historyChanges";
 
 export interface NavigationLink {
   path: string;
-  component: JSX.Element;
+  component: React.ComponentType<any>;
 }
 
 export const navigationComponent = (
