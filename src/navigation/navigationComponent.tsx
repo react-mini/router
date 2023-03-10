@@ -9,7 +9,7 @@ export interface NavigationLink {
 export const navigationComponent = (
   navLinks: NavigationLink[],
   nestLevel: number,
-  notFoundpage?: JSX.Element
+  notFoundpage: JSX.Element
 ) => {
   let component: any = null;
   const currentLocationPathname = window.location.pathname;

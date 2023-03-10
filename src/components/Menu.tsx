@@ -4,10 +4,13 @@ import {
   NavigationLink,
 } from "../navigation/navigationComponent";
 
-export const Menu: React.FC<{ nestLevel: number; children: any }> = ({
-  children,
-  nestLevel,
-}) => {
+export const Menu: React.FC<{
+  nestLevel: number;
+  children: any;
+  notFoundpage?: JSX.Element;
+}> = ({ children, nestLevel, notFoundpage }) => {
+  if (!notFoundpage) notFoundpage = <div>Resource not found</div>;
+
   let paths: NavigationLink[] = [];
   if (!children?.length) {
     if (typeof children === "object") {
@@ -21,7 +24,7 @@ export const Menu: React.FC<{ nestLevel: number; children: any }> = ({
       path: child.props.path,
     }));
   }
-  const Component = navigationComponent(paths, nestLevel);
+  const Component = navigationComponent(paths, nestLevel, notFoundpage);
 
   return Component;
 };
