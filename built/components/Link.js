@@ -5,6 +5,7 @@ var Link = function (_a) {
     var clickNavigate = function (e) {
         return onClickNavigate(e, path);
     };
+    //commenet
     return (React.createElement("a", { href: path, onClick: clickNavigate }, label));
 };
 export default Link;

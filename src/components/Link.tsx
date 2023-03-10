@@ -6,7 +6,7 @@ export interface LinkInterface {
   label: string;
 }
 
-const Link: React.FC<LinkInterface> = ({ path, label }) => {
+export const Link: React.FC<LinkInterface> = ({ path, label }) => {
   const clickNavigate = (e: React.MouseEvent<HTMLAnchorElement>) =>
     onClickNavigate(e, path);
   //commenet
@@ -16,5 +16,3 @@ const Link: React.FC<LinkInterface> = ({ path, label }) => {
     </a>
   );
 };
-
-export default Link;
