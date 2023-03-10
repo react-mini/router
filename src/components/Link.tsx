@@ -9,6 +9,7 @@ export interface LinkInterface {
 const Link: React.FC<LinkInterface> = ({ path, label }) => {
   const clickNavigate = (e: React.MouseEvent<HTMLAnchorElement>) =>
     onClickNavigate(e, path);
+  //commenet
   return (
     <a href={path} onClick={clickNavigate}>
       {label}
