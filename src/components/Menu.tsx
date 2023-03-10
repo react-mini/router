@@ -37,7 +37,7 @@ export const Menu: React.FC<MenuPropsInterface> = ({
 
 export interface RoutePropsInterface {
   path: string;
-  component: React.ComponentType;
+  component: React.ComponentType<any>;
 }
 
 export const Route: React.FC<RoutePropsInterface> = ({
