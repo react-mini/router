@@ -18,8 +18,8 @@
   "devDependencies": {
     "@types/react": "^18.0.28",
     "del-cli": "5.0.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "typescript": "^4.9.5"
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "typescript": "4.9.5"
   }
 }
