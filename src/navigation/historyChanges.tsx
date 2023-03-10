@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-const historyChanges = () => {
+export const historyChanges = () => {
   const [forceRerender, setForceRerender] = useState<number>(0);
 
   useEffect(() => {
@@ -21,5 +21,3 @@ const historyChanges = () => {
 
   return forceRerender;
 };
-
-export default historyChanges;

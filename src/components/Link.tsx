@@ -1,5 +1,5 @@
 import React from "react";
-import { onClickNavigate } from "../navigation/onClickNavigate";
+import { onClickNavigate } from "../navigation/navigateToPath";
 
 export interface LinkInterface {
   path: string;
