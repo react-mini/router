@@ -10,7 +10,7 @@ Components to use:
 - <Route>
 ```
 
-Example:
+Menu + Route Example:
 
 ```JSX
 <Menu nestLevel={0}>
@@ -18,6 +18,12 @@ Example:
   <Route path="catalog" component={CatalogApp}></Route>
   <Route path="about" component={About}></Route>
 </Menu>
+```
+
+Link Example:
+
+```JSX
+<Link path={link.path}>{link.label}</Link>
 ```
 
 PROPS:
