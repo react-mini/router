@@ -17,7 +17,7 @@
 
     "noEmit": false, // TS WON'T BE THE COPILER, IT WILL BE BABEL
     "sourceMap": true,
-    "outDir": "./built",
+    "outDir": "./build",
     "declaration": true,
 
     "resolveJsonModule": true,
